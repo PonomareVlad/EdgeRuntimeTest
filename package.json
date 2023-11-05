@@ -1,4 +1,4 @@
 {
-  "name": "edge-runtime-test",
+  "type": "module",
   "dependencies": {}
 }
