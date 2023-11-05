@@ -1,3 +1,7 @@
-export const config = {runtime: "edge"};
+import {Queue, MemoryDriver} from "docmq";
 
-export default () => Response.json({ok: true});
+const queue = new Queue(new MemoryDriver("default"), "docmq");
+
+export default () => Response.json(queue);
+
+export const config = {runtime: "edge"};

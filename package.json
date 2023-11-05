@@ -1,4 +1,12 @@
 {
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "docmq": "^0.5.6"
+  },
+  "overrides": {
+    "cron-parser": "github:PonomareVlad/cron-parser#workers-support"
+  },
+  "resolutions": {
+    "cron-parser": "github:PonomareVlad/cron-parser#workers-support"
+  }
 }
