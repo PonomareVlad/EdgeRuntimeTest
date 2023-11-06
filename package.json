@@ -4,9 +4,9 @@
     "realm-web": "npm:@ponomarevlad/realm-web@2.0.0-edge.1"
   },
   "overrides": {
-    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.1"
+    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2"
   },
   "resolutions": {
-    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.1"
+    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2"
   }
 }
