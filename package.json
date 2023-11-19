@@ -1,12 +1,17 @@
 {
   "type": "module",
   "dependencies": {
-    "docmq": "^0.5.6"
+    "docmq": "^0.5.6",
+    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
   },
   "overrides": {
-    "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1"
+    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2",
+    "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1",
+    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
   },
   "resolutions": {
-    "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1"
+    "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2",
+    "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1",
+    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
   }
 }

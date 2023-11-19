@@ -1,6 +1,16 @@
-import {Queue, MemoryDriver} from "docmq";
+import {Queue} from "docmq";
+import {MongoClient} from "mongodb";
+import {MongoDriver} from "docmq/driver/mongo";
 
-const queue = new Queue(new MemoryDriver("default"), "docmq");
+export const {
+    DATA_API_URL: url,
+    DATA_API_KEY: key,
+    DATA_SOURCE_NAME: serviceName,
+} = process.env;
+
+const mongo = new MongoClient({url, key, serviceName});
+const driver = new MongoDriver(mongo, {schema: "DocMQ", table: "queue"});
+const queue = new Queue(driver, "docmq");
 
 export default () => Response.json(queue);
 
