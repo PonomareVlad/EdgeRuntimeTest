@@ -12,6 +12,11 @@ const mongo = new MongoClient({url, key, serviceName});
 const driver = new MongoDriver(mongo, {schema: "DocMQ", table: "queue"});
 const queue = new Queue(driver, "docmq");
 
-export default () => Response.json(queue);
+queue.process(async (job, api) => await api.ack());
+
+export default async () => {
+    await queue.enqueue({ref: "test", payload: {success: true}});
+    return Response.json(queue);
+};
 
 export const config = {runtime: "edge"};
