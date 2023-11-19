@@ -2,16 +2,16 @@
   "type": "module",
   "dependencies": {
     "docmq": "^0.5.6",
-    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
+    "mongodb": "npm:mongo-realm-web-wrapper@0.0.0"
   },
   "overrides": {
     "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2",
     "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1",
-    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
+    "mongodb": "npm:mongo-realm-web-wrapper@0.0.0"
   },
   "resolutions": {
     "bson": "npm:@ponomarevlad/bson@6.2.0-no-tla.2",
     "cron-parser": "npm:@ponomarevlad/cron-parser@4.9.0-browser.1",
-    "mongodb": "github:PonomareVlad/mongo-realm-web-wrapper"
+    "mongodb": "npm:mongo-realm-web-wrapper@0.0.0"
   }
 }
