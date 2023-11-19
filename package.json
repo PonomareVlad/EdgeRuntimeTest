@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "docmq": "^0.5.6",
+    "docmq": "npm:@ponomarevlad/docmq@0.5.6-browser.1",
     "mongodb": "npm:mongo-realm-web-wrapper@0.0.1"
   },
   "overrides": {
